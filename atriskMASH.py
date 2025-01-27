@@ -10,7 +10,7 @@ def load_model():
 model = load_model()
 
 # アプリのタイトル
-st.title('Event Prediction App')
+st.title('Prediction model for at-risk MASH')
 
 # 入力フォームの作成
 st.header('Input Variables')
