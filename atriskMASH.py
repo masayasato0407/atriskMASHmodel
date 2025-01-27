@@ -1,12 +1,11 @@
 import streamlit as st
 import pandas as pd
 import joblib
-import pickle
 
 #モデルの読み込み
 @st.cache_resource
 def load_model():
-    return pickle.load(open('random_forest_model.pkl', 'rb'))
+    return joblib.load('./random_forest_model.pkl')
 
 model = load_model()
 
