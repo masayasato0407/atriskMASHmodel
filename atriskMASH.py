@@ -11,7 +11,7 @@ model = load_model()
 
 # アプリのタイトル
 st.title('STEALTH-ARMS (STEALTH study-derived At-Risk MASH Stratification) model')
-st.markdown(f'<h3 style="font-size: 20px;">Probability of having "URL of the original article:TBD" in this patient = {probability:.2%}</h3>', unsafe_allow_html=True)
+st.markdown("URL of the original article: To be determined")
 
 # 入力フォームの作成
 st.header('Input Variables')
