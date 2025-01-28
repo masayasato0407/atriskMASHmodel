@@ -46,7 +46,3 @@ if st.button('Predict'):
     # 結果の表示
     st.header('Prediction Result')
     st.markdown(f'<h3 style="font-size: 24px;">Probability of having "at-risk MASH" in this patient = {probability:.2%}</h3>', unsafe_allow_html=True)
-    
-    # 入力データの表示
-    st.subheader('Input Data Summary')
-    st.write(input_data)
