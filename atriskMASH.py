@@ -23,7 +23,7 @@ HTN = 1 if st.radio('HTN (Hypertension)', ['Absent', 'Present']) == 'Present' el
 
 AST = st.number_input('AST', min_value=1, max_value=300, value=30)
 GGT = st.number_input('γ-GTP', min_value=1, max_value=1000, value=30)
-Plt = st.number_input('Platelet count ( × 104/µL)', min_value=1.0, max_value=75.0, value=20.0,step=0.1)
+Plt = st.number_input('Platelet count ( × 104/µL)', min_value=1.0, max_value=75.0, value=20.0,step=0.1,format="%.1f")
 INR = st.number_input('PT-INR', min_value=0.50, max_value=3.00, value=1.00, step=0.01, format="%.2f")
 
 # 入力データをデータフレームに変換
@@ -45,7 +45,7 @@ if st.button('Predict'):
     
     # 結果の表示
     st.header('Prediction Result')
-    st.write(f'Probability of having "at-risk MASH" in this patient = {probability:.2%}')
+    st.markdown(f'<h3 style="font-size: 24px;">Probability of having "at-risk MASH" in this patient = {probability:.2%}</h3>', unsafe_allow_html=True)
     
     # 入力データの表示
     st.subheader('Input Data Summary')
