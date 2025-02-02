@@ -11,7 +11,7 @@ model = load_model()
 st.title('STEALTH-ARMS (STEALTH study-derived At-Risk MASH Stratification) model')
 st.markdown("URL of the original article: To be determined")
 
-st.header('Input Variables')
+st.header('Input variables and press the predict button')
 age = st.number_input('Patient age', min_value=18, max_value=100, value=50)
 DM = 1 if st.radio('DM (Diabetes)', ['Absent', 'Present']) == 'Present' else 0
 HTN = 1 if st.radio('HTN (Hypertension)', ['Absent', 'Present']) == 'Present' else 0
