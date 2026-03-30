@@ -9,7 +9,7 @@ def load_model():
 model = load_model()
 
 st.title('STEALTH-ARMS (STEALTH study-derived At-Risk MASH Stratification) model')
-st.markdown("URL of the original article: To be determined")
+st.markdown("URL of the original article: https://onlinelibrary.wiley.com/doi/10.1111/hepr.70125")
 
 st.header('Input variables and press the predict button')
 age = st.number_input('Patient age', min_value=18, max_value=100, value=50)
